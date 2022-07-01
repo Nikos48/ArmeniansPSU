@@ -1,4 +1,10 @@
-header{
-    background-color: #1B1212;
-    height: 100px;
+*{
+    margin: 0;
+}
+header {
+    background-color: #202020;
+    height: 90px;
+}
+.logo {
+    width: 370px;
 }
