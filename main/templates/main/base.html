@@ -17,20 +17,25 @@
 </head>
 <body>
     <header>
-        <div class="logo-block">
-            <a href="#"><img src="{% static 'main/images/armenians_logo.png' %}" class="logo"></img></a>
+        <div class='container'>
+            <div class="logo-block">
+                <a href="#"><img src="{% static 'main/images/armenians_logo.png' %}" class="logo"></img></a>
+            </div>
+            <nav>
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="#">Галерея</a></li>
+                    <li class="nav-li"><a href="#">Контакты</a></li>
+                    <li class="nav-li"><a href="#">О нас</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="nav-ul">
-                <li class="nav-li"><a href="#">Галерея</a></li>
-                <li class="nav-li"><a href="#">Контакты</a></li>
-                <li class="nav-li"><a href="#">О нас</a></li>
-            </ul>
-        </nav>
     </header>
-    <div class="content">
-        {% block content %}
-        {% endblock %}
-    </div>
+
+    <content>
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </content>
 </body>
 </html>
