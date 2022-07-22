@@ -17,7 +17,16 @@
 </head>
 <body>
     <header>
-            <img src="{% static 'main/images/armenians_logo.png' %}" class="logo"></img>
+        <div class="logo-block">
+            <a href="#"><img src="{% static 'main/images/armenians_logo.png' %}" class="logo"></img></a>
+        </div>
+        <nav>
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="#">Галерея</a></li>
+                <li class="nav-li"><a href="#">Контакты</a></li>
+                <li class="nav-li"><a href="#">О нас</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="content">
         {% block content %}

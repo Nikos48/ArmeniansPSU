@@ -1,15 +1,24 @@
-*{
+body{
     margin: 0;
 }
 header {
-    background-color: #202020;
     height: 70px;
+    max-width: 1920px;
 }
 .logo {
-    padding-top: 13px;
-    padding-left: 10px;
-    height: 43px;
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 17px;
 }
-.content {
-
+.logo-block{
+    height: 70px;
+    background-color: #191919; /* Блевотный цвет Эдуарда -- #281c01 */
+}
+.nav-ul{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+.nav-li{
+    float:left;
 }
