@@ -2,11 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- CSS, JS -->
     <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
     <script type="text/javascript" src="{% static 'main/js/index.js' %}"></script>
 
@@ -19,15 +22,15 @@
     <header>
         <div class='container'>
             <div class="logo-block">
-                <a href="#"><img src="{% static 'main/images/armenians_logo.png' %}" class="logo"></img></a>
+                <a href="/home/"><img src="{% static 'main/images/armenians_logo.png' %}" class="logo"></img></a>
             </div>
-            <nav>
+            <div class='nav'>
                 <ul class="nav-ul">
-                    <li class="nav-li"><a href="#">Галерея</a></li>
-                    <li class="nav-li"><a href="#">Контакты</a></li>
-                    <li class="nav-li"><a href="#">О нас</a></li>
+                    <a href="#"><li class="nav-li">Галерея</li></a>
+                    <a href="#"><li class="nav-li">Контакты</li></a>
+                    <a href="#"><li class="nav-li">О нас</li></a>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
 

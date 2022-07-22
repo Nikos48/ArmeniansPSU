@@ -4,8 +4,11 @@ body{
 
 header {
     background-color: #191919; /* Блевотный цвет Эдуарда -- #281c01 */
-    height: 50px;
-    max-width: 1920px;
+    height: 32px;
+    width: 100%;
+    padding: 9px 0;
+    z-index: 1;
+
 }
 
 content {
@@ -13,22 +16,51 @@ content {
 }
 
 .container {
-    max-width: 200px;
-    align-self: center;
+    width: auto;
+    height: 32px;
+    margin: 0px 12%;
+}
+
+.nav {
+    min-width: 50%;
+    height: 32px;
+    float: right;
+    margin: 0px;
+}
+.nav-ul{
+    display: inline-block;
+    height: 100%;
+    list-style:none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.nav-li{
+    float: left;
+    background-color: #595959;
+    margin: 0px 5%;
+    width: 100px;
+    height: 18px;
+    border-radius: 10px;
+    font-family: 'Exo 2', sans-serif;
+    color: #FFF;
+    padding-bottom: 9px;
+    padding-top: 5px;
+    text-align: center;
+
 }
 
 .logo {
     height: 32px;
-    margin-left: 3%;
-    margin-top: 9px;
 }
 .logo-block{
+    width: 260px;
+    float: left;
 }
-.nav-ul{
-    list-style:none;
-    margin: 0;
-    padding: 0;
-}
-.nav-li{
-    float:left;
+@media only screen and (max-width: 1200px) {
+    .container {
+        margin: 0px 3%;
+    }
+
 }
