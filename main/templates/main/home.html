@@ -1,25 +1,55 @@
-{% extends 'main/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- CSS, JS -->
+    <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+    <script type="text/javascript" src="{% static 'main/js/index.js' %}"></script>
 
-{% block title %}
-Армяне ПГУ
-{% endblock %}
+    <title>Армяне ПГУ</title>
 
+    <link rel="icon" href= "https://cdn.countryflags.com/thumbs/armenia/flag-round-250.png" type="image/x-icon">
 
+</head>
+<body>
+    <header>
+        <div class='container'>
+            <div class="logo-block">
+                <a href="/home/"><img src="{% static 'main/images/armenians_logo.png' %}" class="logo"></img></a>
+            </div>
+            <span class='nav'>
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="#about">О нас</a></li>
+                    <li class="nav-li"><a href="#gallery">Галерея</a></li>
+                    <li class="nav-li"><a href="#contact">Вступить</a></li>
+                </ul>
+            </span>
+        </div>
+    </header>
 
-{% block content %}
-<div class="gallery">
-    <div class="container">
+    <content>
+        <div class="about" id="about">
+            <div class="container">
 
-    </div>
-</div>
-<div class="about">
-    <div class="container">
-
-    </div>
-</div>
-<div class="contact">
-    <div class="container">
+            </div>
+        </div>
+        <div class="gallery" id="gallery">
+            <div class="container">
         
-    </div>
-</div>
-{% endblock %}
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="container">
+                
+            </div>
+        </div>
+    </content>
+</body>
+</html>
