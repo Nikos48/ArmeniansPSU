@@ -24,21 +24,19 @@
             <div class="logo-block">
                 <a href="/home/"><img src="{% static 'main/images/armenians_logo.png' %}" class="logo"></img></a>
             </div>
-            <div class='nav'>
+            <span class='nav'>
                 <ul class="nav-ul">
-                    <a href="#"><li class="nav-li">Галерея</li></a>
-                    <a href="#"><li class="nav-li">Контакты</li></a>
-                    <a href="#"><li class="nav-li">О нас</li></a>
+                    <li class="nav-li"><a href="/gallery">Галерея</a></li>
+                    <li class="nav-li"><a href="/contact">Связаться</a></li>
+                    <li class="nav-li"><a href="/about">О нас</a></li>
                 </ul>
-            </div>
+            </span>
         </div>
     </header>
 
     <content>
-        <div class="container">
-            {% block content %}
-            {% endblock %}
-        </div>
+        {% block content %}
+        {% endblock %}
     </content>
 </body>
 </html>
