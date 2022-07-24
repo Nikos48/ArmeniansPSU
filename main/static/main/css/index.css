@@ -24,18 +24,17 @@ header {
   margin-top: 0px;
 }
 
-.nav {
-  position: absolute;
-  display: inline;
-  align-items: right;
-  height: 32px;
-  padding-left: 25vw;
-}
-.nav-ul {
-  top: -9px;
-  position: relative;
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  margin: 0;
+}
+
+.nav-ul {
+  margin: 0px;
+  padding-left: 35%;
+  align-items: center;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -46,15 +45,11 @@ header {
   width: auto;
 }
 .nav-li {
-  padding: 0 5%;
+  height: 32px;
   width: 100px;
   text-align: center;
   background: #fff;
-}
-
-.nav-li a {
-  width: auto;
-  margin: 0 auto;
+  border-radius: 10%;
 }
 
 .logo {
@@ -70,8 +65,8 @@ header {
 }
 
 .about {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 75px;
+  padding-bottom: 25px;
   background-color: #da291c90;
   box-sizing: border-box;
   height: 100vh;
@@ -83,7 +78,9 @@ header {
 }
 
 .gallery {
+  padding: 25px 0;
   position: relative;
+  margin: 0;
   background-color: #0033a090;
   height: 100vh;
   width: 100%;
@@ -91,6 +88,8 @@ header {
 }
 
 .contact {
+  padding: 25px 0;
+  margin: 0;
   position: relative;
   background-color: #ff9e1b90;
   height: 100vh;
@@ -99,12 +98,9 @@ header {
 }
 
 .white-box {
-  position: relative;
-  margin-top: 25px;
   background: #ffffff99;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
   border-radius: 10%;
 }
 
@@ -112,5 +108,16 @@ header {
   .container {
     width: 94%;
     padding: 0px 3%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .nav-ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-ul {
+    padding-left: 15%;
   }
 }
