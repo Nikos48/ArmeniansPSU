@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Шрифт -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
     <!-- CSS, JS -->
     <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
     <script type="text/javascript" src="{% static 'main/js/index.js' %}"></script>
@@ -35,26 +31,34 @@
 
     <content>
         <div class="about" id="about">
-            <div class="container">
-                <div class="white-box">
-                    <p>
-                        Հայեր միացեք
-                    </p>
-                </div>
+            <div class="content-box">
+                <p>
+                    Հայեր միացեք
+                </p>
             </div>
         </div>
         <div class="gallery" id="gallery">
-            <div class="container">
-                <div class="white-box">
-
+            <div class="content-box">
+                <div><p class="gallery-headline">Галерея</p></div>
+                <div class="gallery-flexbox">
+                    <span class="gallery-item" >
+                        <p>День Национальности</p>
+                        <img src="{% static 'main/images/nationality_day.jpg' %}", class="gallery-image">
+                    </span>
+                    <span class="gallery-item">
+                        <p>Вечер В Армянском Центре</p>
+                        <img src="{% static 'main/images/sitting.jpg' %}", class="gallery-image">
+                    </span>
+                    <span class="gallery-item">
+                        <p>В Гостях У Аруси Кавказ</p>
+                        <img src="{% static 'main/images/Arusia.png' %}", class="gallery-image">
+                    </span>
                 </div>
             </div>
         </div>
         <div class="contact" id="contact">
-            <div class="container">
-                <div class="white-box">
+            <div class="content-box">
 
-                </div>
             </div>
         </div>
     </content>
