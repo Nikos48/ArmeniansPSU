@@ -25,7 +25,11 @@
                 <li class="nav-li">Галерея<a href="#gallery"></a></li>
                 <li class="nav-li">Вступить<a href="#contact"></a></li>
             </ul>
-            </span>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </header>
 
@@ -39,18 +43,18 @@
         </div>
         <div class="gallery" id="gallery">
             <div class="content-box">
-                <div><p class="gallery-headline">Галерея</p></div>
+                <div class="gallery-headline-block"><p class="gallery-headline">Галерея</p></div>
                 <div class="gallery-flexbox">
                     <span class="gallery-item" >
-                        <p>День Национальности</p>
+                        <i>День Национальности</i>
                         <img src="{% static 'main/images/nationality_day.jpg' %}", class="gallery-image">
                     </span>
                     <span class="gallery-item">
-                        <p>Вечер В Армянском Центре</p>
+                        <i>Вечер В Армянском Центре</i>
                         <img src="{% static 'main/images/sitting.jpg' %}", class="gallery-image">
                     </span>
                     <span class="gallery-item">
-                        <p>В Гостях У Аруси Кавказ</p>
+                        <i>В Гостях У Аруси Кавказ</i>
                         <img src="{% static 'main/images/Arusia.png' %}", class="gallery-image">
                     </span>
                 </div>
