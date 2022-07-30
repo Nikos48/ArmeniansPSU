@@ -5,6 +5,7 @@ html {
 }
 body {
   height: 100%;
+  overflow-x: hidden;
   margin: 0;
 }
 
@@ -172,6 +173,16 @@ header {
   text-align: center;
   display: block;
   margin-bottom: 20px;
+}
+
+.contact-flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contact-logo {
+  height: 100px;
 }
 
 @media only screen and (max-width: 1200px) {
