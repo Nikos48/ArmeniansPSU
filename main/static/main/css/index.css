@@ -12,7 +12,7 @@ body {
 header {
   background-color: #191919; /* Блевотный цвет Эдуарда -- #281c01 */
   height: 32px;
-  width: 100%;
+  width: 100vw;
   padding: 9px 0;
   z-index: 2;
   position: fixed;
@@ -20,7 +20,7 @@ header {
 
 .container {
   position: relative;
-  width: 76%;
+  width: 76vw;
   height: 100%;
   padding: 0 12%;
   margin-top: 0px;
@@ -100,7 +100,7 @@ header {
   padding-bottom: 25px;
   background-color: #da291c90;
   box-sizing: border-box;
-  width: 100%;
+  width: 100vw;
   min-height: 100%;
 }
 .about p {
@@ -115,7 +115,7 @@ header {
   position: relative;
   margin: 0;
   background-color: #0033a090;
-  width: 100%;
+  width: 100vw;
   min-height: 90%;
   box-sizing: border-box;
 }
@@ -125,7 +125,7 @@ header {
   margin: 0;
   position: relative;
   background-color: #ff9e1b90;
-  width: 100%;
+  width: 100vw;
   min-height: 100%;
   box-sizing: border-box;
   display: flex;
@@ -174,6 +174,7 @@ header {
   width: 350px;
   height: 350px;
   border-radius: 10px;
+  max-width: 85vw;
 }
 
 .gallery-item {
@@ -203,8 +204,8 @@ header {
   padding: 20px;
   border-radius: 30px;
   min-height: 120px;
-  min-width: 400px;
   margin: 30px;
+  max-width: 100%;
 }
 
 .contact-item-flexbox {
@@ -245,12 +246,19 @@ header {
   border-color: transparent;
 }
 
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .container {
     width: 94%;
     padding: 0px 3%;
   }
 }
+
+@media (max-width: 1000px) {
+  .nav-ul {
+    padding-left: 15%;
+  }
+}
+
 @media (max-width: 712px) {
   .hamburger {
     display: block;
@@ -268,34 +276,37 @@ header {
 
   .nav-ul {
     position: fixed;
-    left: 100%;
-    top: 70px;
+    left: -100%;
+    top: 50px;
     padding: 0;
     margin: 0;
     gap: 0;
     flex-direction: column;
     background: #191919;
     width: 100%;
-    text-align: center;
     transition: 0.3s;
-    justify-content: flex-start;
+    align-items: center;
   }
   .nav-li {
-    margin: 16px 0;
+    display: inline;
     border: none;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
   }
+
   .nav-ul.active {
     left: 0;
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .nav-ul {
-    padding-left: 15%;
+@media (max-width: 470px) {
+  .contact-text {
+    font-size: 23px;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media (max-width: 320px) {
   .nav-ul {
     display: none;
   }

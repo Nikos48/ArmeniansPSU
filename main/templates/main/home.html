@@ -21,17 +21,18 @@
                 <a href="/home/"><img src="{% static 'main/images/armenians_logo.png' %}" class="logo"></img></a>
             </div>
             <ul class="nav-ul">
-                <li class="nav-li">О нас<a href="#about"></a></li>
-                <li class="nav-li">Галерея<a href="#gallery"></a></li>
-                <li class="nav-li">Вступить<a href="#contact"></a></li>
+                <li class="nav-li">О нас<a href="#about" class="nav-link"></a></li>
+                <li class="nav-li">Галерея<a href="#gallery" class="nav-link"></a></li>
+                <li class="nav-li">Вступить<a href="#contact" class="nav-link"></a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
         </div>
     </header>
+    <script src="{% static 'main/js/hamburger.js' %}"></script>
 
     <content>
         <div class="about" id="about">
