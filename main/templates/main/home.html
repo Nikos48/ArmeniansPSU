@@ -11,7 +11,7 @@
 
     <title>Армяне ПГУ</title>
 
-    <link rel="icon" href= "https://cdn.countryflags.com/thumbs/armenia/flag-round-250.png" type="image/x-icon">
+    <link rel="icon" href= "https://cdn.countryflags.com/thumbs/armenia/flag-round-250.png" SameSite=None type="image/x-icon">
 
 </head>
 <body>
@@ -25,7 +25,7 @@
                 <li class="nav-li">Галерея<a href="#gallery"></a></li>
                 <li class="nav-li">Вступить<a href="#contact"></a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -61,17 +61,24 @@
             </div>
         </div>
         <div class="contact" id="contact">
-            <div class="content-box">
+            <div class="content-box" style="padding: 0;">
                 <div class="contact-flexbox">
                     <span class="contact-item">
-                        <div><i>Вступи</i></div>
-                        <img src="{% static 'main/images/whatsapp.png' %}" class="contact-logo">
-                        <p>+7 962 445-33-63<br>Нарине Кареновна</p>
+                        <div class="contact-headline"><button class="contact-item-link" onclick="copyPhone()"></button><i>Вступи</i></div>
+                        <span class = "contact-item-flexbox">
+                            <img align="middle" src="{% static 'main/images/whatsapp.png' %}" class="contact-logo">
+                            <span class="contact-details">
+                                <span class="contact-text">+7 962 445-33-63</span>
+                                <span style="padding:0 0 10px 5px;"class="contact-text">Нарине Кареновна</span>
+                            </span>
+                        </span>
                     </span>
                     <span class="contact-item">
-                        <div><i>Подпишись</i></div>
-                        <img src="{% static 'main/images/instagram.png' %}" class="contact-logo">
-                        <p>@arm_center_psu</p>
+                        <div class="contact-headline"><a class="contact-item-link" target="_blank" href="https://instagram.com/arm_center_psu/"></a><i>Подпишись</i></div>
+                        <span class = "contact-item-flexbox">
+                            <img align="middle" src="{% static 'main/images/instagram.png' %}" class="contact-logo">
+                            <span class="contact-text" style="padding-bottom: 10px;">@arm_center_psu</span>
+                        </span>
                     </span>
                 </div>
             </div>

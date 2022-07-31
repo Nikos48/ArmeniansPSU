@@ -73,6 +73,19 @@ header {
 
 .hamburger {
   display: none;
+  cursor: pointer;
+  float: right;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3.5px;
+  margin: 5px auto;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 .logo {
   height: 32px;
@@ -115,6 +128,8 @@ header {
   width: 100%;
   min-height: 100%;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 .content-box {
@@ -181,8 +196,53 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+.contact-item {
+  position: relative;
+  background: #f0f8ff;
+  padding: 20px;
+  border-radius: 30px;
+  min-height: 120px;
+  min-width: 400px;
+  margin: 30px;
+}
+
+.contact-item-flexbox {
+  display: flex;
+  justify-content: space-around;
+}
+
 .contact-logo {
-  height: 100px;
+  max-height: 100px;
+  border-radius: 30px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.contact-headline {
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 20px;
+}
+.contact-text {
+  font-family: "Exo 2";
+  font-size: 30px;
+  align-self: center;
+}
+.contact-item-link {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: red;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -191,14 +251,56 @@ header {
     padding: 0px 3%;
   }
 }
-@media only screen and (max-width: 712px) {
+@media (max-width: 712px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
   .nav-ul {
-    display: none;
+    position: fixed;
+    left: 100%;
+    top: 70px;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    flex-direction: column;
+    background: #191919;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    justify-content: flex-start;
+  }
+  .nav-li {
+    margin: 16px 0;
+    border: none;
+  }
+  .nav-ul.active {
+    left: 0;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .nav-ul {
     padding-left: 15%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .nav-ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
