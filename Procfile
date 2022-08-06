@@ -1,0 +1,1 @@
+web: gunicorn ArmeniansPSU.wsgi --log-file -
