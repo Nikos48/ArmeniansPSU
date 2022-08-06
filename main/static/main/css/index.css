@@ -96,20 +96,58 @@ header {
 }
 
 .about {
+  display: flex;
+  justify-content: center;
   padding-top: 75px;
   padding-bottom: 25px;
   background-color: #da291c90;
   box-sizing: border-box;
   width: 100vw;
-  min-height: 100%;
+  min-height: 95%;
 }
-.about p {
+.about > div > p:first-child {
+  /* Девиз */
   margin: 0;
   text-align: center;
   color: rgb(100, 10, 0);
   font-size: 2.5rem;
 }
 
+.about > .content-box {
+  width: 85%;
+  margin-bottom: 50px;
+}
+
+.about-block {
+  background-color: #f0f8ff;
+  font-size: 1.7rem;
+  font-family: "Exo 2";
+  margin-top: 20px;
+  border-radius: 20px;
+  text-align: center;
+  min-height: auto;
+}
+.about-block > p:first-child {
+  margin: 0;
+  padding: 5% 10%;
+}
+
+.about-deed.n3 {
+  border-radius: 0 0 20px 20px;
+  align-content: top;
+  background-origin: ;
+}
+.about-deed {
+  padding: 10vh 0;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  color: #f0f8ff;
+  font-weight: 800;
+  min-height: 0 !important;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
 .gallery {
   padding-bottom: 50px;
   position: relative;
