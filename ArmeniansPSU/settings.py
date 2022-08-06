@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-l*xsxhu&9!@h1ien!-nnch+e!zrs#%n#*9+=jm969z6+g+qljl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://armenians-psu.herokuapp.com', '*']
+ALLOWED_HOSTS = ['https://armenians-psu.herokuapp.com']
 
 
 # Application definition
@@ -79,10 +79,6 @@ WSGI_APPLICATION = 'ArmeniansPSU.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ciba',
-    }
 }
 
 
