@@ -156,7 +156,7 @@ COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join("./main", 'static'),
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type

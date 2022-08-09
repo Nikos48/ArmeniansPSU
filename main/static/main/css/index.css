@@ -251,7 +251,7 @@ header {
 
 .contact-item-flexbox {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .contact-logo {
@@ -309,10 +309,10 @@ header {
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(8.2px) rotate(45deg);
   }
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8.2px) rotate(-45deg);
   }
 
   .nav-ul {
@@ -338,6 +338,11 @@ header {
 
   .nav-ul.active {
     left: 0;
+  }
+
+  .about > .content-box {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 
